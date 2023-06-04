@@ -1,0 +1,141 @@
+.main{
+  height: 100vh;
+}
+img{
+ width: 100%;
+ height: 50vh;
+ object-fit: cover;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* float: left; */
+  /* position: absolute;
+  top: 0;
+  margin: 0;
+  right: 60px; */
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+.to_do{
+  width: 50%;
+  min-width: 340px;
+  max-width: 450px;
+  position: relative;
+  top: -280px;
+  color: #fff;
+}
+/* .moon_icon{
+  font-size: 26px;
+} */
+.todo_form input{
+  height: 40px;
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  padding: 4px 8px;
+  font-size: 18px;
+}
+.todo_form{
+  text-align: center;
+}
+.todo_form button{
+  /* width: 42px; */
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #fff;
+}
+.todo_item{
+  position: relative;
+}
+.edit_icon{
+  position: absolute;
+  right: 40px;
+  top: 16px;
+}
+.cross_icon{
+  position: absolute;
+  right: 12px;
+  top: 16px;
+  /* z-index: 50; */
+}
+.main_list{
+  color: hsl(235, 19%, 35%);
+  background-color: white;
+  margin: 18px 0;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 20px hsl(236, 9%, 61%);
+}
+.footer, .footer div{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color:  hsl(236, 9%, 61%);
+} 
+.footer div p{
+  margin: auto 10px;
+}
+.todo_list p{
+  padding: 14px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+.todo_list div {
+  font-size: large;
+  font-weight: 600;
+}
+.inactive{
+  text-decoration: line-through;
+  color: hsl(236, 9%, 61%);
+}
+.para_icon div{
+  display: flex;
+  justify-content: space-between;
+}
+.footer p:hover{
+  color: hsl(237, 14%, 26%);
+}
+.footer{
+  padding: 0 20px;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+@media screen and (max-width : 800px) {
+  .footer, .footer div{
+    font-size: 12px;
+  }
+  .footer div p{
+    margin: auto 2px;
+  }
+  
+}
+@media screen and (max-width : 375px) {
+  .to_do{
+    min-width: 280px;
+    left: -15px;
+  }
+  .footer, .footer div{
+    font-size: 10px;
+  }
+
+}
